@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/folders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif"
+            android:text="@string/folders_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="start"/>
+
+        <ImageButton
+            android:id="@+id/log_out"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="200dp"
+            android:background="@drawable/log_out_icon"
+            android:backgroundTint="@color/goodGray"
+            android:contentDescription="@string/log_out_from_account" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/search_folders"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/top_bar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints="searchable_folders_name"
+        android:background="@color/goodGray"
+        android:drawableStart="@drawable/search_icon_sized"
+        android:ems="10"
+        android:hint="@string/search_name"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textColorHint="#9E9E9E" />
+
+    <ListView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_folders"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:divider="@android:color/transparent"
+        android:fontFamily="sans-serif"
+        tools:background="@color/goodGray" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/items"
+        android:layout_alignBottom="@id/items"
+        android:clickable="true"
+        android:contentDescription="@string/description_add_new_note_button"
+        android:focusable="true"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        tools:ignore="RedundantDescriptionCheck" />
+
+</RelativeLayout>

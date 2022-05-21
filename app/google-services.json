@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "108442685442",
+    "project_id": "inotes-chad",
+    "storage_bucket": "inotes-chad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108442685442:android:e539105948b529e1de571b",
+        "android_client_info": {
+          "package_name": "com.example.testlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108442685442-7ih5luk8i2f5kvud98uekgn16627dp68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_spi0FVjaY4VPS2oBRcdtNjE6M9ISsrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108442685442-7ih5luk8i2f5kvud98uekgn16627dp68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

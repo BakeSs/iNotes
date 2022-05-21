@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesListActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/back_button"
+            app:srcCompat="@drawable/abc_vector_test" />
+        <EditText
+            android:id="@+id/search_notes"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:autofillHints="searchable_folders_name"
+            android:background="@color/goodGray"
+            android:drawableStart="@drawable/search_icon_sized"
+            android:ems="10"
+            android:hint="@string/search_name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:textColorHint="#9E9E9E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/under_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_panel"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/notes_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/notes_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/delete_all_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/goodGray"
+            android:fontFamily="sans-serif"
+            android:text="@string/delete_all" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/under_top_panel"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/notes"
+        android:layout_alignBottom="@id/notes"
+        android:clickable="true"
+        android:contentDescription="@string/description_add_new_note_button"
+        android:focusable="true"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        tools:ignore="RedundantDescriptionCheck" />
+</RelativeLayout>

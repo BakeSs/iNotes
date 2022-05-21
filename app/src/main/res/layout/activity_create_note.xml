@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNoteActivity"
+    tools:ignore="ExtraText"
+    android:background="@color/goodGray">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/back_button"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+        <EditText
+            android:id="@+id/note_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:hint="@string/please_input"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topPanel"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:hint="@string/input_note_text"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine" />
+
+
+</RelativeLayout>
+
