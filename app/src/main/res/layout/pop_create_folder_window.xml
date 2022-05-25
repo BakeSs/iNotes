@@ -28,7 +28,8 @@
         android:ems="10"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:textColor="@color/appleYellow"/>
+        android:textColor="@color/appleYellow"
+        />
 
     <Button
         android:id="@+id/button_folder_add"

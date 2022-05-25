@@ -40,4 +40,9 @@
     <string name="input_email">Введіть пошту</string>
     <string name="input_password">Введіть пароль</string>
     <string name="log_out_from_account">log out from account</string>
+    <string name="folders">Папки</string>
+    <string name="search">Пошук</string>
+    <string name="notes">Нотатки</string>
+    <string name="delete">Видалити усе</string>
+    <string name="restore_password">Відновити пароль</string>
 </resources>

@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
 
             android:fontFamily="sans-serif"
-            android:text="@string/folders_name"
+            android:text="@string/folders"
             android:textAlignment="viewStart"
             android:textColor="@color/white"
             android:textSize="30sp"
@@ -52,7 +52,7 @@
         android:background="@color/goodGray"
         android:drawableStart="@drawable/search_icon_sized"
         android:ems="10"
-        android:hint="@string/search_name"
+        android:hint="@string/search"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
         android:paddingEnd="0dp"
